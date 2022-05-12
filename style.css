@@ -18,6 +18,9 @@ body {
   vertical-align: middle;
   margin: 16px;
 }
+.swiper {
+  min-width: 0;
+}
 .swiper-wrapper {
   padding-bottom: 32px;
 }
