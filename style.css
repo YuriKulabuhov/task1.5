@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+}
+body {
+  font-size: 16px;
+  color: black;
+  font-family: "TT Lakes";
+  background-color: #f2f2f2;
+  margin: 0;
+}
+.header {
+  background-color: #fff;
+}
+.header__title {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  margin: 16px;
+}
+.swiper-wrapper {
+  padding-bottom: 32px;
+}
+.swiper-slide {
+  margin: 12px 0px 16px 16px;
+  background-color: #fff;
+  width: 240px;
+  height: 72px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main__btn {
+  display: none;
+}
+.swiper-slide::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: url("img/go.svg") no-repeat center;
+}
+@media (min-width: 768px) {
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 0;
+    width: 768px;
+  }
+  .btn-more {
+    display: inline-block;
+    border: none;
+    background: url("img/icon.svg") no-repeat left;
+    margin-left: 16px;
+    text-align: right;
+    width: 110px;
+  }
+  .btn-more::after {
+    content: "Показать все";
+    display: inline;
+  }
+  .btn-hidden {
+    display: inline-block;
+    border: none;
+    background: url("img/icon-hidden.svg") no-repeat left;
+    margin-left: 16px;
+    text-align: right;
+    width: 75px;
+  }
+  .btn-hidden::after {
+    content: "Скрыть";
+    display: inline;
+  }
+  .hidden {
+    display: none;
+  }
+  .show {
+    display: flexbox;
+  }
+}
+@media (min-width: 1120px) {
+  .swiper-wrapper {
+    width: 1120px;
+  }
+} ;
